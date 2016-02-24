@@ -1,0 +1,40 @@
+// variables
+@button-color: #77818C;
+@text-color: #ED6058; 
+
+// mixins
+	.border-style {
+		border-style: solid;
+		border-width: 3px;
+		border-color: @text-color;
+	}
+
+// parametric mixins
+	.border-radius(@radius:0px) {
+		border-radius: @radius; 
+	}
+	
+// classes
+.big-button {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	color: @text-color; 
+	background-color: @button-color;
+	margin: 30px; 
+	text-align: center;
+	text-padding: 10px;
+	.border-style
+}
+
+.text {
+	color: @text-color; 
+	text-align: center; 
+}
+
+.img-style {
+	text-align: center;
+}
+
+// ids 
+
